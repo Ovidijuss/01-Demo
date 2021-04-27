@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Flex</title>
+    <head>
+        
+      <style>
+             .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction:row;
+            }
+
+          .flex-item-1 {
+            width: 100%;
+            background-color: grey; 
+            }
+
+           .flex-item-2,  .flex-item-3 {
+            width: 50%;
+            
+            }
+
+            .flex-item-2 {
+                background-color: aqua;
+
+            }
+
+           .flex-item-3 {
+            background-color: red;
+            
+            }
+
+            .flex-item-4 {
+            width:70%;
+            background-color: sandybrown;
+           }
+
+           .flex-item-5 {
+            width:30%;
+            background-color: rgb(244, 96, 165); 
+            }
+
+           .flex-item-6, .flex-item-7, .flex-item-8 {
+            width:33.32%;
+            
+            }
+
+            p{
+                color:yellowgreen;
+                font-size:  28px;
+            }
+                
+            [class*="flex-item"]{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                   .kvadratelis{
+                    margin: 10px;
+                    padding: 10px;
+                  width: 50px;
+                  height: 50px;
+                  background-color: teal;
+
+                   }
+
+            @media all and (max-width:720px){
+                .flex-container{
+                    flex-flow: column wrap ;
+
+                     /*flex-wrap: wrap*/
+                }
+
+                [class*="flex-item"]{
+                    width: 100%;
+
+                }
+
+                .flex-item-1 {
+                    order: 1;
+                }
+            
+
+
+            }
+
+      </style>
+
+         
+    </head>
+
+    <body>
+     <div class='container'>
+          <h1>Index Flex pavyzdys</h1>
+          <div class='flex-container'> 
+              <div class='flex-item-1'>
+                 <div class='kvadratelis'>
+                 </div>
+
+                  <div class='kvadratelis'>
+                  </div>
+               </div>
+
+              <div class='flex-item-2'><p>2</p></div>
+              <div class='flex-item-3'><p>3</p></div>
+              <div class='flex-item-4'><p>4</p></div>
+              <div class='flex-item-5'><p>5</p></div>
+              <div class='flex-item-6'><p>6</p></div>
+              <div class='flex-item-7'><p>7</p></div>
+              <div class='flex-item-8'><p>8</p></div>
+
+          </div>
+     </div>
+       
+
+    </body>
+
+</html>
